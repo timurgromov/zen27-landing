@@ -107,7 +107,7 @@ img {
 }
 
 .logo__img {
-    height: 90px;
+    height: 120px;
     width: auto;
     display: block;
 }
@@ -232,7 +232,7 @@ h1, h2, h3 {
 
 .hero h1 {
     font-size: clamp(2.6rem, 5vw, 3.8rem);
-    line-height: 1.04;
+    line-height: 1.1;
     font-weight: 700;
 }
 
