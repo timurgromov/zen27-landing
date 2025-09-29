@@ -93,7 +93,7 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 12px 0;
+    padding: 14px 0;
 }
 
 .logo {
@@ -107,7 +107,7 @@ img {
 }
 
 .logo__img {
-    height: 50px;
+    height: 56px;
     width: auto;
     display: block;
 }
@@ -206,7 +206,7 @@ main {
 
 .hero {
     position: relative;
-    padding: 110px 0 95px;
+    padding: 55px 0 95px;
     overflow: hidden;
 }
 
@@ -827,7 +827,7 @@ h1, h2, h3 {
 
 @media (max-width: 720px) {
     .hero {
-        padding: 130px 0 90px;
+        padding: 65px 0 90px;
     }
 
     .hero__actions,
