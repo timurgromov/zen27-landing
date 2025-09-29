@@ -28,194 +28,345 @@
 
     <main>
         <section id="hero" class="hero" data-animate>
-            <div class="container hero__inner">
-                <div class="hero__text">
+            <div class="hero__backdrop" aria-hidden="true"></div>
+            <div class="container hero__layout">
+                <div class="hero__content">
+                    <span class="eyebrow">Импульсная система Zen27</span>
                     <h1>Zen27 — импульсная система, которая учит не торговать лишнее.</h1>
-                    <p class="hero__subtitle">Мы создали инструмент, который помогает жить спокойно и торговать только, когда рынок действительно готов.</p>
+                    <span class="section__divider section__divider--hero" aria-hidden="true"></span>
+                    <p class="lead">Мы создали инструмент, который помогает жить спокойно и торговать только, когда рынок действительно готов.</p>
+                    <div class="hero__highlights pattern pattern--grid">
+                        <div class="highlight">
+                            <span class="highlight__label">Фокус</span>
+                            <span class="highlight__value">Импульсы & дисциплина</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight__label">Горизонт</span>
+                            <span class="highlight__value">8 лет историй</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight__label">Стратегии</span>
+                            <span class="highlight__value">Intraday · Pulse · Core</span>
+                        </div>
+                    </div>
                     <div class="hero__actions">
                         <a href="#products" class="btn btn--primary">Посмотреть демо ZenIntraday</a>
                         <a href="#products" class="btn btn--ghost">Узнать о ZenPulse / ZenCore</a>
                     </div>
                 </div>
-                <div class="hero__media" data-animate>
-                    <!-- Image hero_bg.jpg -->
-                    <figure class="media-card" data-media="Тишина против шума">
-                        <div class="media-card__visual media-card__visual--hero"></div>
-                        <figcaption>Видео: Тишина против шума</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="philosophy" class="section philosophy" data-animate>
-            <div class="container">
-                <div class="section__header">
-                    <h2>Zen в трейдинге — это не про тишину на графике, а про тишину в голове.</h2>
-                </div>
-                <div class="section__body">
-                    <blockquote>
-                        <p>Zen27 создана не для того, чтобы человек сидел у монитора круглые сутки.</p>
-                        <p>Она помогает <strong>не быть в рынке постоянно</strong> — а быть там, где рынок действительно даёт шанс.</p>
-                        <p>95% трейдеров торгуют эмоции. Мы торгуем импульсы.</p>
-                        <p>Zen27 — инструмент для тех, кто выбирает <strong>спокойствие вместо фомы</strong>, <strong>дисциплину вместо хаоса</strong>.</p>
-                    </blockquote>
-                    <figure class="media-card" data-media="Почему дзен в трейдинге">
-                        <!-- Image philosophy_bg.jpg -->
-                        <div class="media-card__visual media-card__visual--philosophy"></div>
-                        <figcaption>Видео: Почему дзен в трейдинге</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="origins" class="section origins" data-animate>
-            <div class="container">
-                <div class="section__header">
-                    <h2>От идей Билла Уильямса — к квантовой адаптации.</h2>
-                </div>
-                <div class="section__body">
-                    <div class="text-block">
-                        <p>Zen27 не придумана с нуля. Её философский корень — в идеях Билла Уильямса о психологии рынка.</p>
-                        <p>Но в 2020-е годы старая система больше не работает. Рынки изменились, крипта живёт по своим законам.</p>
-                        <p>Поэтому Zen27 — это <strong>квантово адаптированная версия принципов Уильямса</strong>, протестированная на исторических графиках.</p>
-                        <p>Здесь нет угадываний, нет “индикаторной эзотерики” — только математика и наблюдение за реальными импульсами.</p>
+                <div class="hero__panel" data-animate>
+                    <div class="panel panel--video panel--tilt" data-tilt>
+                        <span class="panel__accent" aria-hidden="true"></span>
+                        <div class="panel__header">
+                            <span class="panel__tag">Видео 1</span>
+                            <span class="panel__title">Тишина против шума</span>
+                        </div>
+                        <div class="panel__body">
+                            <div class="panel__wave"></div>
+                            <div class="panel__meta">
+                                <div class="panel__play" aria-hidden="true">▶</div>
+                                <p>Почему Zen — это не пассивность, а умение выключить шум, пока рынок не созрел.</p>
+                            </div>
+                        </div>
                     </div>
-                    <figure class="media-card" data-media="Почему классика не работает">
-                        <!-- Image origins_bg.jpg -->
-                        <div class="media-card__visual media-card__visual--origins"></div>
-                        <figcaption>Видео: Почему классика не работает</figcaption>
-                    </figure>
                 </div>
             </div>
         </section>
 
-        <section id="products" class="section products" data-animate>
+        <section id="philosophy" class="section section--gradient" data-animate>
+            <div class="container">
+                <div class="split">
+                    <div class="split__content">
+                        <span class="eyebrow">Философия</span>
+                        <h2>Zen в трейдинге — это не про тишину на графике, а про тишину в голове.</h2>
+                        <span class="section__divider" aria-hidden="true"></span>
+                        <div class="quotebox">
+                            <p>Zen27 создана не для того, чтобы человек сидел у монитора круглые сутки.</p>
+                            <p>Она помогает <strong>не быть в рынке постоянно</strong> — а быть там, где рынок действительно даёт шанс.</p>
+                            <p>95% трейдеров торгуют эмоции. Мы торгуем импульсы.</p>
+                            <p>Zen27 — инструмент для тех, кто выбирает <strong>спокойствие вместо фомы</strong>, <strong>дисциплину вместо хаоса</strong>.</p>
+                        </div>
+                    </div>
+                    <aside class="split__media" data-animate>
+                        <div class="panel panel--light panel--tilt" data-tilt>
+                            <span class="panel__accent panel__accent--gold" aria-hidden="true"></span>
+                            <div class="panel__header">
+                                <span class="panel__tag">Видео 2</span>
+                                <span class="panel__title">Почему дзен в трейдинге</span>
+                            </div>
+                            <div class="panel__body">
+                                <p>О внутреннем фокусе Zen27 и как дисциплина создаёт пространство для правильных решений.</p>
+                                <div class="panel__timeline">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="origins" class="section" data-animate>
             <div class="container">
                 <div class="section__header">
+                    <span class="eyebrow">Истоки</span>
+                    <h2>От идей Билла Уильямса — к квантовой адаптации.</h2>
+                    <span class="section__divider" aria-hidden="true"></span>
+                </div>
+                <div class="timeline pattern pattern--lines">
+                    <div class="timeline__item" data-animate>
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <span class="timeline__step">01</span>
+                        <h3>Философский корень</h3>
+                        <p>Zen27 уходит корнями в идеи Билла Уильямса о психологии рынка и поведении толпы.</p>
+                    </div>
+                    <div class="timeline__item" data-animate>
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <span class="timeline__step">02</span>
+                        <h3>Рынки 2020-х</h3>
+                        <p>Рынки ускорились: крипта диктует новые ритмы, классические паттерны перестали работать так же, как раньше.</p>
+                    </div>
+                    <div class="timeline__item" data-animate>
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <span class="timeline__step">03</span>
+                        <h3>Квантовая адаптация</h3>
+                        <p>Мы перенесли принципы Уильямса в квантовую плоскость, без угадываний и индикаторной эзотерики.</p>
+                    </div>
+                    <div class="timeline__item" data-animate>
+                        <span class="timeline__marker" aria-hidden="true"></span>
+                        <span class="timeline__step">04</span>
+                        <h3>Тесты на истории</h3>
+                        <p>Каждая гипотеза верифицирована на больших исторических выборках и сравнена с реальным поведением импульсов.</p>
+                    </div>
+                </div>
+                <div class="panel panel--line panel--tilt" data-tilt>
+                    <span class="panel__accent" aria-hidden="true"></span>
+                    <div class="panel__header">
+                        <span class="panel__tag">Видео 3</span>
+                        <span class="panel__title">Почему классика не работает</span>
+                    </div>
+                    <div class="panel__body">
+                        <p>Наглядно показываем, как классические индикаторы сдают позиции и чем их заменяет квантовый взгляд Zen27.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section section--overlay" data-animate>
+            <div class="container">
+                <div class="section__header">
+                    <span class="eyebrow">Продукты</span>
                     <h2>Три пути к дзену в трейдинге.</h2>
                     <p class="section__subtitle">Intraday — Pulse — Core.</p>
+                    <span class="section__divider" aria-hidden="true"></span>
                     <p class="section__intro">Zen27 — это не одна стратегия, а три уровня зрелости трейдера. Все они основаны на одних принципах, но различаются ритмом и глубиной.</p>
                 </div>
                 <div class="products__grid">
-                    <article class="card" data-animate>
-                        <h3>ZenIntraday</h3>
-                        <p>Для тех, кто только начинает путь. Частые сигналы (≈300 за 8 лет), тот же алгоритм, но выше активность. Помогает перейти от хаоса к системности. Tripwire-версия доступна бесплатно.</p>
+                    <article class="product product--entry" data-animate>
+                        <header class="product__header">
+                            <span class="product__tag">Старт</span>
+                            <h3>ZenIntraday</h3>
+                        </header>
+                        <ul>
+                            <li>Для тех, кто только начинает путь.</li>
+                            <li>≈300 сигналов за 8 лет, высокая активность.</li>
+                            <li>Помогает перейти от хаоса к системности.</li>
+                            <li>Tripwire-версия доступна бесплатно.</li>
+                        </ul>
                     </article>
-                    <article class="card" data-animate>
-                        <h3>ZenPulse</h3>
-                        <p>Флагман Zen27. Баланс между частотой сделок и стабильностью. Около 80 сделок за 8 лет, оптимум для трейдеров, умеющих ждать.</p>
+                    <article class="product product--pulse" data-animate>
+                        <header class="product__header">
+                            <span class="product__tag">Баланс</span>
+                            <h3>ZenPulse</h3>
+                        </header>
+                        <ul>
+                            <li>Флагман Zen27.</li>
+                            <li>Около 80 сделок за 8 лет.</li>
+                            <li>Оптимум для трейдеров, умеющих ждать.</li>
+                            <li>Стабильный ритм и прозрачная аналитика.</li>
+                        </ul>
                     </article>
-                    <article class="card" data-animate>
-                        <h3>ZenCore</h3>
-                        <p>Минимум действий, максимум смысла. Для инвесторов и клубов, кто мыслит долгими циклами. Invite-доступ, ограниченные места.</p>
+                    <article class="product product--core" data-animate>
+                        <header class="product__header">
+                            <span class="product__tag">Премиум</span>
+                            <h3>ZenCore</h3>
+                        </header>
+                        <ul>
+                            <li>Минимум действий, максимум смысла.</li>
+                            <li>Идеально для инвесторов и клубов.</li>
+                            <li>Фокус на долгих циклах и капитале.</li>
+                            <li>Invite-доступ, ограниченные места.</li>
+                        </ul>
                     </article>
                 </div>
-                <figure class="media-card media-card--wide" data-media="От фомы к дзену">
-                    <!-- Image products_chart.jpg -->
-                    <div class="media-card__visual media-card__visual--products"></div>
-                    <figcaption>Видео: От фомы к дзену</figcaption>
-                </figure>
+                <div class="panel panel--video panel--tilt" data-tilt>
+                    <span class="panel__accent panel__accent--gold" aria-hidden="true"></span>
+                    <div class="panel__header">
+                        <span class="panel__tag">Видео 4</span>
+                        <span class="panel__title">От фомы к дзену</span>
+                    </div>
+                    <div class="panel__body">
+                        <p>Три стратегии, три ритма. Как выбрать свой уровень Zen27 и не потерять концентрацию.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="results" class="section results" data-animate>
+        <section id="results" class="section" data-animate>
             <div class="container">
                 <div class="section__header">
+                    <span class="eyebrow">Валидация</span>
                     <h2>Честная статистика и квантовая валидация.</h2>
                     <p class="section__subtitle">Без подглядывания вперёд. Без вырезанных участков.</p>
+                    <span class="section__divider" aria-hidden="true"></span>
                 </div>
-                <div class="section__body results__content">
-                    <div class="text-block">
-                        <p>Zen27 протестирована на исторических графиках за 8 лет.</p>
-                        <ul class="stats-list">
-                            <li>Количество сделок: от 30 до 300 — в зависимости от стратегии.</li>
-                            <li>Горизонт: 8 лет торгов.</li>
-                            <li>Средний PF устойчиво выше 1.</li>
-                            <li>Историческая просадка по ключевым активам: около 30–40%.</li>
-                        </ul>
-                        <p>Мы не ищем “идеальный” участок. Мы тестируем весь рынок целиком — как это делает квант.</p>
-                        <p>Zen27 — это не магия. Это статистика, дисциплина и отказ от иллюзий.</p>
+                <div class="stats">
+                    <div class="stat" data-animate>
+                        <span class="stat__spark" aria-hidden="true"></span>
+                        <span class="stat__label">Горизонт тестов</span>
+                        <span class="stat__value">8 лет</span>
+                        <p>Полный цикл рыночных фаз без исключений.</p>
                     </div>
-                    <figure class="media-card" data-media="Как тестировалась система">
-                        <!-- Image results_stats.png -->
-                        <div class="media-card__visual media-card__visual--results"></div>
-                        <figcaption>Видео: Как тестировалась система</figcaption>
-                    </figure>
+                    <div class="stat" data-animate>
+                        <span class="stat__spark" aria-hidden="true"></span>
+                        <span class="stat__label">Частота</span>
+                        <span class="stat__value">30–300</span>
+                        <p>Сделок на стратегию. Ритм задаёт ваш уровень Zen.</p>
+                    </div>
+                    <div class="stat" data-animate>
+                        <span class="stat__spark" aria-hidden="true"></span>
+                        <span class="stat__label">Profit Factor</span>
+                        <span class="stat__value">&gt; 1.0</span>
+                        <p>Устойчивый PF без «подгонки» под один участок.</p>
+                    </div>
+                    <div class="stat" data-animate>
+                        <span class="stat__spark" aria-hidden="true"></span>
+                        <span class="stat__label">Историческая просадка</span>
+                        <span class="stat__value">30–40%</span>
+                        <p>Контролируемый риск по ключевым активам.</p>
+                    </div>
+                </div>
+                <div class="panel panel--light panel--tilt" data-tilt>
+                    <span class="panel__accent" aria-hidden="true"></span>
+                    <div class="panel__header">
+                        <span class="panel__tag">Видео 5</span>
+                        <span class="panel__title">Как тестировалась система</span>
+                    </div>
+                    <div class="panel__body">
+                        <p>Методология бектестов, контроль за подглядыванием вперёд и почему мы тестируем весь рынок целиком.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="cta" class="section cta" data-animate>
+        <section id="cta" class="section section--cta" data-animate>
             <div class="container">
-                <div class="cta__inner">
-                    <div class="cta__text">
+                <div class="cta__layout">
+                    <div class="cta__content">
+                        <span class="eyebrow">Доступ</span>
                         <h2>Как получить доступ к Zen27</h2>
                         <p class="section__subtitle">Умный трейдинг — не для всех.</p>
+                        <span class="section__divider" aria-hidden="true"></span>
                         <p>Zen27 — не массовый продукт. Мы работаем с теми, кто ценит системность.</p>
-                        <ul>
-                            <li>ZenIntraday — демо-версия и полный доступ ($120/год).</li>
-                            <li>ZenPulse — Invite-only.</li>
-                            <li>ZenCore — только для инвест-клубов.</li>
+                        <ul class="cta__list">
+                            <li><strong>ZenIntraday</strong> — демо-версия и полный доступ ($120/год).</li>
+                            <li><strong>ZenPulse</strong> — Invite-only.</li>
+                            <li><strong>ZenCore</strong> — только для инвест-клубов.</li>
                         </ul>
                         <p>Начни с Intraday, почувствуй философию Zen27 и переходи к Pulse, когда будешь готов.</p>
+                        <div class="cta__actions">
+                            <a class="btn btn--primary" href="https://t.me/zen27pulse" target="_blank" rel="noopener">Получить демо-доступ</a>
+                            <a class="btn btn--ghost" href="https://t.me/zen27pulse" target="_blank" rel="noopener">Подать заявку на Invite-доступ</a>
+                        </div>
                     </div>
-                    <div class="cta__actions">
-                        <a class="btn btn--primary" href="https://t.me/zen27pulse" target="_blank" rel="noopener">Получить демо-доступ</a>
-                        <a class="btn btn--ghost" href="https://t.me/zen27pulse" target="_blank" rel="noopener">Подать заявку на Invite-доступ</a>
-                    </div>
-                    <figure class="media-card" data-media="Как получить доступ">
-                        <!-- Image cta_bg.jpg -->
-                        <div class="media-card__visual media-card__visual--cta"></div>
-                        <figcaption>Видео: Как получить доступ</figcaption>
-                    </figure>
+                    <aside class="cta__meta" data-animate>
+                        <div class="panel panel--compact panel--tilt" data-tilt>
+                            <span class="panel__accent panel__accent--gold" aria-hidden="true"></span>
+                            <div class="panel__header">
+                                <span class="panel__tag">Видео 6</span>
+                                <span class="panel__title">Как получить доступ</span>
+                            </div>
+                            <div class="panel__body">
+                                <p>Рассказываем, чем отличаются уровни доступа и как выглядит onboarding.</p>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="section faq" data-animate>
+        <section id="faq" class="section section--gradient" data-animate>
             <div class="container">
                 <div class="section__header">
+                    <span class="eyebrow">FAQ</span>
                     <h2>Часто задаваемые вопросы</h2>
+                    <span class="section__divider" aria-hidden="true"></span>
                 </div>
-                <div class="faq__grid">
-                    <article class="faq__item" data-animate>
-                        <h3>Почему у системы так мало сделок?</h3>
-                        <p>Потому что Zen27 ищет не движение, а смысл. Сделка появляется, только когда рынок готов.</p>
-                    </article>
-                    <article class="faq__item" data-animate>
-                        <h3>Это бот?</h3>
-                        <p>Нет. Zen27 не торгует за вас. Она помогает принимать решения на основе подтверждённых импульсов.</p>
-                    </article>
-                    <article class="faq__item" data-animate>
-                        <h3>Почему Invite-only?</h3>
-                        <p>Чтобы сохранить качество и не превратить систему в массовый продукт.</p>
-                    </article>
-                    <article class="faq__item" data-animate>
-                        <h3>Работает ли на фьючерсах?</h3>
-                        <p>Да, стратегия адаптирована под спотовую и фьючерсную торговлю.</p>
-                    </article>
-                    <article class="faq__item" data-animate>
-                        <h3>Почему вы не публикуете код?</h3>
-                        <p>Чтобы защитить систему от копирования. Мы делаем ставку на долгосрочность, а не на хайп.</p>
-                    </article>
-                    <article class="faq__item" data-animate>
-                        <h3>Подходит ли новичкам?</h3>
-                        <p>Intraday подойдёт. Остальные версии — для трейдеров с опытом.</p>
-                    </article>
+                <div class="accordion" role="tablist">
+                    <div class="accordion__item" data-animate>
+                        <button class="accordion__trigger" type="button" aria-expanded="false">
+                            <span>Почему у системы так мало сделок?</span>
+                            <span class="accordion__icon">+</span>
+                        </button>
+                        <div class="accordion__content" role="region">
+                            <p>Потому что Zen27 ищет не движение, а смысл. Сделка появляется, только когда рынок готов.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-animate>
+                        <button class="accordion__trigger" type="button" aria-expanded="false">
+                            <span>Это бот?</span>
+                            <span class="accordion__icon">+</span>
+                        </button>
+                        <div class="accordion__content" role="region">
+                            <p>Нет. Zen27 не торгует за вас. Она помогает принимать решения на основе подтверждённых импульсов.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-animate>
+                        <button class="accordion__trigger" type="button" aria-expanded="false">
+                            <span>Почему Invite-only?</span>
+                            <span class="accordion__icon">+</span>
+                        </button>
+                        <div class="accordion__content" role="region">
+                            <p>Чтобы сохранить качество и не превратить систему в массовый продукт.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-animate>
+                        <button class="accordion__trigger" type="button" aria-expanded="false">
+                            <span>Работает ли на фьючерсах?</span>
+                            <span class="accordion__icon">+</span>
+                        </button>
+                        <div class="accordion__content" role="region">
+                            <p>Да, стратегия адаптирована под спотовую и фьючерсную торговлю.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-animate>
+                        <button class="accordion__trigger" type="button" aria-expanded="false">
+                            <span>Почему вы не публикуете код?</span>
+                            <span class="accordion__icon">+</span>
+                        </button>
+                        <div class="accordion__content" role="region">
+                            <p>Чтобы защитить систему от копирования. Мы делаем ставку на долгосрочность, а не на хайп.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item" data-animate>
+                        <button class="accordion__trigger" type="button" aria-expanded="false">
+                            <span>Подходит ли новичкам?</span>
+                            <span class="accordion__icon">+</span>
+                        </button>
+                        <div class="accordion__content" role="region">
+                            <p>Intraday подойдёт. Остальные версии — для трейдеров с опытом.</p>
+                        </div>
+                    </div>
                 </div>
-                <figure class="media-card media-card--wide" data-media="FAQ">
-                    <!-- Image faq_bg.jpg -->
-                    <div class="media-card__visual media-card__visual--faq"></div>
-                </figure>
             </div>
         </section>
 
         <section class="section disclaimer" data-animate>
             <div class="container">
-                <blockquote>
-                    <!-- Image footer_logo.png -->
+                <div class="disclaimer__box pattern pattern--noise">
+                    <span class="eyebrow">Disclaimer</span>
                     <p>Zen27 — исследовательская торговая система. Не является инвестиционной рекомендацией. Торговля на криптовалютном рынке сопряжена с рисками потерь капитала. Исторические результаты не гарантируют будущих.</p>
-                </blockquote>
+                </div>
             </div>
         </section>
     </main>
