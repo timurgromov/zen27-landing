@@ -224,6 +224,10 @@ main {
     align-items: center;
 }
 
+.hero__content {
+    text-align: left;
+}
+
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -234,6 +238,25 @@ h1, h2, h3 {
     font-size: clamp(2.6rem, 5vw, 3.8rem);
     line-height: 1.1;
     font-weight: 700;
+}
+
+.hero__stats {
+    margin: 24px 0;
+    text-align: left;
+}
+
+.hero__stat-value {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    color: var(--accent-teal);
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.hero__stat-label {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
 }
 
 .hero__highlights {
@@ -1176,6 +1199,21 @@ h1, h2, h3 {
     letter-spacing: 0.08em;
     font-size: 0.78rem;
     text-transform: uppercase;
+}
+
+.proof-card__tag--start {
+    background: rgba(79, 157, 214, 0.12);
+    color: var(--accent-blue);
+}
+
+.proof-card__tag--flagship {
+    background: rgba(90, 184, 161, 0.12);
+    color: var(--accent-teal);
+}
+
+.proof-card__tag--premium {
+    background: rgba(198, 168, 105, 0.12);
+    color: var(--accent-gold);
 }
 
 .proof-card__tabs {
