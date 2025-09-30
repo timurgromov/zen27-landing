@@ -17,10 +17,11 @@
                     <img src="logo_2.png" alt="Zen27 - Quantum Leap" class="logo__img">
                 </a>
                 <nav class="nav">
+                    <a href="#proof" class="nav__link">Статистика</a>
                     <a href="#philosophy" class="nav__link">Философия</a>
                     <a href="#origins" class="nav__link">Истоки</a>
                     <a href="#products" class="nav__link">Стратегии</a>
-                    <a href="#results" class="nav__link">Статистика</a>
+                    <a href="#results" class="nav__link">Валидация</a>
                     <a href="#faq" class="nav__link">FAQ</a>
                 </nav>
                 <a href="#cta" class="btn btn--ghost">Получить доступ</a>
@@ -74,6 +75,88 @@
                 </div>
             </div>
         </section>
+
+        <!-- PATCH BEGIN: PROOF_HTML -->
+        <section id="proof" class="section" data-animate>
+            <div class="container">
+                <div class="section__header">
+                    <span class="eyebrow">Статистика</span>
+                    <h2>Реальные результаты Zen27</h2>
+                    <p class="section__subtitle">Проверенные данные без подглядывания вперёд</p>
+                    <span class="section__divider" aria-hidden="true"></span>
+                </div>
+                <div class="proof__grid">
+                    <div class="proof-card proof-card--active" data-product="pulse">
+                        <div class="proof-card__header">
+                            <span class="proof-card__tag">Флагман</span>
+                            <h3>Zen27 Pulse</h3>
+                        </div>
+                        <div class="proof-card__tabs">
+                            <button class="proof-card__tab proof-card__tab--active" data-asset="ETH">ETH</button>
+                            <button class="proof-card__tab proof-card__tab--disabled" data-asset="BTC" disabled>BTC</button>
+                        </div>
+                        <div class="proof-card__content">
+                            <div class="proof-card__metrics">
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Сделок</span>
+                                    <span class="proof-card__metric-value" data-metric="trades">—</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Винрейт</span>
+                                    <span class="proof-card__metric-value" data-metric="winrate">—</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Profit Factor</span>
+                                    <span class="proof-card__metric-value" data-metric="profitFactor">—</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Макс. просадка</span>
+                                    <span class="proof-card__metric-value" data-metric="maxDrawdown">—</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">ROI</span>
+                                    <span class="proof-card__metric-value" data-metric="roi">—</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Период</span>
+                                    <span class="proof-card__metric-value" data-metric="period">—</span>
+                                </div>
+                            </div>
+                            <div class="proof-card__chart">
+                                <div class="sparkline" data-chart="equity">
+                                    <div class="sparkline__placeholder">График загружается...</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proof-card__note">
+                            <p data-note="note">Загрузка данных...</p>
+                        </div>
+                    </div>
+                    <div class="proof-card proof-card--disabled">
+                        <div class="proof-card__header">
+                            <span class="proof-card__tag">Старт</span>
+                            <h3>Zen27 Intraday</h3>
+                        </div>
+                        <div class="proof-card__content">
+                            <p class="proof-card__placeholder">Скоро</p>
+                        </div>
+                    </div>
+                    <div class="proof-card proof-card--disabled">
+                        <div class="proof-card__header">
+                            <span class="proof-card__tag">Премиум</span>
+                            <h3>Zen27 Core</h3>
+                        </div>
+                        <div class="proof-card__content">
+                            <p class="proof-card__placeholder">Скоро</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="proof__cta">
+                    <a href="#results" class="btn btn--ghost">Смотреть методологию</a>
+                </div>
+            </div>
+        </section>
+        <!-- PATCH END: PROOF_HTML -->
 
         <section id="philosophy" class="section section--gradient" data-animate>
             <div class="container">

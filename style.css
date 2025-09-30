@@ -1121,3 +1121,169 @@ h1, h2, h3 {
         grid-template-columns: 1fr;
     }
 }
+
+/* PATCH BEGIN: PROOF_CSS */
+.proof__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+    align-items: start;
+}
+
+.proof-card {
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(13, 15, 22, 0.92);
+    padding: 32px;
+    box-shadow: 0 24px 52px rgba(4, 6, 12, 0.55);
+    display: grid;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.proof-card--active {
+    border-color: var(--border-strong);
+    box-shadow: 0 20px 48px rgba(90, 184, 161, 0.18);
+}
+
+.proof-card--active:hover,
+.proof-card--active:focus-within {
+    transform: translateY(-6px);
+}
+
+.proof-card--disabled {
+    opacity: 0.6;
+    background: rgba(8, 12, 20, 0.6);
+}
+
+.proof-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.proof-card__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(90, 184, 161, 0.12);
+    color: var(--accent-teal);
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+}
+
+.proof-card__tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.proof-card__tab {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.proof-card__tab--active {
+    background: var(--accent-teal);
+    color: #010409;
+    border-color: var(--accent-teal);
+}
+
+.proof-card__tab--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.proof-card__metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.proof-card__metric {
+    display: grid;
+    gap: 4px;
+}
+
+.proof-card__metric-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+}
+
+.proof-card__metric-value {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.proof-card__chart {
+    height: 80px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.sparkline {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sparkline__placeholder {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.proof-card__note {
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.proof-card__note p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.proof-card__placeholder {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.proof__cta {
+    text-align: center;
+    margin-top: 32px;
+}
+
+@media (max-width: 720px) {
+    .proof__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .proof-card__metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* PATCH END: PROOF_CSS */

@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "name": "Zen27 Pulse",
+      "scenarios": [
+        {
+          "asset": "ETH",
+          "exchange": "Binance",
+          "symbol": "ETHUSDT",
+          "timeframe": "9H",
+          "period": "2017-10-31..2025-09-30",
+          "trades": 84,
+          "winratePct": 38.10,
+          "profitFactor": 1.908,
+          "maxDrawdownPct": 41.50,
+          "roiPct": 7287.48,
+          "equity": [],
+          "note": "Strategy Product Отчёт, TradingView"
+        }
+      ]
+    },
+    { 
+      "name": "Zen27 Intraday", 
+      "scenarios": [] 
+    },
+    { 
+      "name": "Zen27 Core", 
+      "scenarios": [] 
+    }
+  ]
+}
