@@ -96,6 +96,12 @@ img {
     padding: 14px 0;
 }
 
+.nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -133,7 +139,8 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 28px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
     border-radius: 999px;
     border: 1px solid transparent;
     background: var(--accent-teal);
@@ -178,7 +185,7 @@ main {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: var(--accent-teal);
@@ -218,14 +225,13 @@ main {
 }
 
 .hero__layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 52px;
-    align-items: center;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero__content {
-    text-align: left;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -235,28 +241,148 @@ h1, h2, h3 {
 }
 
 .hero h1 {
-    font-size: clamp(2.6rem, 5vw, 3.8rem);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
     line-height: 1.1;
     font-weight: 700;
+    margin-top: 32px;
 }
+
 
 .hero__stats {
     margin: 24px 0;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .hero__stat-value {
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
     font-weight: 700;
     color: var(--accent-teal);
-    line-height: 1.1;
-    margin-bottom: 8px;
+    line-height: 1;
+    margin-bottom: 0;
 }
 
 .hero__stat-label {
     font-size: 1.1rem;
     color: var(--text-secondary);
     font-weight: 500;
+}
+
+.hero__video {
+    margin: 32px -50px;
+    width: calc(100% + 100px);
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(135deg, var(--bg-panel) 0%, var(--bg-contrast) 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.video-player__placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+}
+
+.video-player__play-button {
+    width: 64px;
+    height: 64px;
+    background: var(--accent-teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.video-player__play-button:hover {
+    transform: scale(1.1);
+}
+
+.video-player__play-button svg {
+    color: white;
+    margin-left: 4px;
+}
+
+.video-player__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.video-player__description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+/* Risks Section */
+.risks__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 48px 0;
+}
+
+.risk-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.risk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-tight);
+}
+
+.risk-card__icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--accent-teal), var(--accent-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: white;
+}
+
+.risk-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.risk-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.risks__video {
+    margin-top: 48px;
 }
 
 .hero__highlights {
