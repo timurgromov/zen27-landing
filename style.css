@@ -1257,6 +1257,21 @@ h1, h2, h3 {
     stroke: var(--accent-gold);
 }
 
+/* ===== МЕТОДОЛОГИЯ ВИДЕО ===== */
+
+.methodology-video {
+    margin-top: 60px;
+}
+
+.methodology-video__caption {
+    text-align: center;
+    color: #8A8A8A;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
 /* ===== КАК МЫ РАБОТАЕМ ===== */
 
 .workflow {
