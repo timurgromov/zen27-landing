@@ -1189,6 +1189,74 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
+/* ===== ЗОЛОТЫЕ АКЦЕНТЫ ===== */
+
+/* 1) Разделительные линии: золотой модификатор */
+.section__divider--gold {
+    background: linear-gradient(90deg, rgba(198,168,105,.75), rgba(90,184,161,.5));
+}
+
+/* 2) Сравнение: золотой лейбл для Zen27 */
+.compare__label--system {
+    background: rgba(198,168,105,.14);
+    color: var(--accent-gold);
+    border: 1px solid rgba(198,168,105,.28);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* 3) Истоки (таймлайн): чётные маркеры и подсветка золотые */
+.timeline__item:nth-child(2n) .timeline__marker {
+    background: var(--accent-gold);
+    box-shadow: 0 0 0 6px rgba(198,168,105,.22);
+}
+.timeline__item:nth-child(2n)::after {
+    background: linear-gradient(135deg, rgba(198,168,105,.14), transparent 65%);
+}
+
+/* 4) Валидация (статы): каждый второй «спарк» — золото */
+.stat:nth-child(2n) .stat__spark {
+    background: radial-gradient(circle at center, rgba(198,168,105,.16), transparent 65%);
+}
+
+/* 5) Продукты: у Core — золотые буллеты */
+.product--core ul li::before {
+    background: linear-gradient(135deg, var(--accent-gold), rgba(198,168,105,.55));
+}
+
+/* 6) Вариант кнопки под золото (ghost-стиль) */
+.btn--gold {
+    background: rgba(198,168,105,.08);
+    border-color: rgba(198,168,105,.35);
+    color: var(--text-primary);
+    box-shadow: none;
+}
+.btn--gold:hover,
+.btn--gold:focus-visible {
+    background: rgba(198,168,105,.14);
+    border-color: rgba(198,168,105,.55);
+}
+
+/* 7) Лёгкое усиление золотых панелей там, где уже есть panel__accent--gold */
+.panel .panel__accent--gold ~ .panel__body,
+.panel .panel__accent--gold ~ .panel__header {
+    position: relative;
+}
+.panel .panel__accent--gold ~ .panel__body::before,
+.panel .panel__accent--gold ~ .panel__header::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background: radial-gradient(120px 80px at 10% 0%, rgba(198,168,105,.08), transparent 60%);
+}
+
+/* 8) Подвал: YouTube — золото при ховере */
+.footer__social-icon--youtube:hover svg,
+.footer__social-icon--youtube:focus svg {
+    stroke: var(--accent-gold);
+}
+
 /* Social Icons - Контурная версия */
 .footer__social-icons {
     display: flex;
