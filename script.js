@@ -1,6 +1,81 @@
 document.addEventListener('DOMContentLoaded', () => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    // Modal functionality
+    const modal = document.getElementById('tradingViewModal');
+    const tryFreeBtn = document.getElementById('tryFreeBtn');
+    const tryDemoBtn = document.getElementById('tryDemoBtn');
+    const closeModalBtn = document.getElementById('closeModal');
+    const overlay = modal?.querySelector('.modal__overlay');
+
+    if (tryFreeBtn && modal) {
+        tryFreeBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    if (tryDemoBtn && modal) {
+        tryDemoBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    const closeModal = () => {
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', closeModal);
+    }
+
+    if (overlay) {
+        overlay.addEventListener('click', closeModal);
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal?.classList.contains('active')) {
+            closeModal();
+        }
+        if (e.key === 'Escape' && privacyModal?.classList.contains('active')) {
+            closePrivacyModal();
+        }
+    });
+
+    // Privacy Policy Modal
+    const privacyModal = document.getElementById('privacyModal');
+    const privacyLink = document.getElementById('privacyLink');
+    const closePrivacyBtn = document.getElementById('closePrivacyModal');
+    const privacyOverlay = privacyModal?.querySelector('.modal__overlay');
+
+    if (privacyLink && privacyModal) {
+        privacyLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            privacyModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    const closePrivacyModal = () => {
+        if (privacyModal) {
+            privacyModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    if (closePrivacyBtn) {
+        closePrivacyBtn.addEventListener('click', closePrivacyModal);
+    }
+
+    if (privacyOverlay) {
+        privacyOverlay.addEventListener('click', closePrivacyModal);
+    }
+
     const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
     smoothScrollLinks.forEach(link => {
         const targetId = link.getAttribute('href');

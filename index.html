@@ -26,6 +26,7 @@
                     <a href="#results" class="nav__link">Валидация</a>
                     <a href="#faq" class="nav__link">FAQ</a>
                 </nav>
+                <a href="#support" class="btn btn--ghost btn--support">Отдел заботы</a>
             </div>
         </div>
     </header>
@@ -36,12 +37,30 @@
             <div class="container hero__layout">
                 <div class="hero__content">
                     <span class="eyebrow">Импульсная торговая система Zen27</span>
-                    <h1>Zen27 — для тех, кто пришёл на рынок за деньгами, а не эмоциями</h1>
+                    <h1><span class="hero__brand">Zen27 —</span> для тех, кто пришёл на рынок за деньгами, а не эмоциями</h1>
                     <div class="hero__stats">
-                        <a href="#cta" class="btn btn--primary hero__cta">Получить доступ</a>
-                        <div class="hero__stat-value">+7287% доходности за восемь лет</div>
+                        <div class="hero__stat-value">+7287% доходности на ETH за 8 лет</div>
                     </div>
-                    <div class="hero__video">
+                    <span class="section__divider section__divider--hero" aria-hidden="true"></span>
+                    <div class="hero__highlights pattern pattern--grid">
+                        <div class="highlight">
+                            <span class="highlight__label">Безопасность</span>
+                            <span class="highlight__value">Только спот · Без плеча</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight__label">Проверено на истории</span>
+                            <span class="highlight__value">8 лет статистики</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight__label">3 стратегии</span>
+                            <span class="highlight__value">Intraday · Pulse · Core</span>
+                        </div>
+                    </div>
+                    <div class="hero__actions">
+                        <button class="btn btn--primary" id="tryDemoBtn">Попробовать демо Zen27 Intraday</button>
+                        <a href="#hero-video" class="btn btn--ghost">Как устроен Zen27</a>
+                    </div>
+                    <div class="hero__video" id="hero-video">
                         <div class="video-player">
                             <div class="video-player__placeholder">
                                 <div class="video-player__play-button">
@@ -53,25 +72,6 @@
                                 <div class="video-player__description">Почему Zen — это не пассивность, а умение выключить шум, пока рынок не созрел.</div>
                             </div>
                         </div>
-                    </div>
-                    <span class="section__divider section__divider--hero" aria-hidden="true"></span>
-                    <div class="hero__highlights pattern pattern--grid">
-                        <div class="highlight">
-                            <span class="highlight__label">Фокус</span>
-                            <span class="highlight__value">Импульсы & дисциплина</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight__label">Горизонт</span>
-                            <span class="highlight__value">8 лет историй</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight__label">Стратегии</span>
-                            <span class="highlight__value">Intraday · Pulse · Core</span>
-                        </div>
-                    </div>
-                    <div class="hero__actions">
-                        <a href="#products" class="btn btn--primary">Попробовать демо Zen27 Intraday</a>
-                        <a href="#products" class="btn btn--ghost">Узнать о Zen27 Pulse / Zen27 Core</a>
                     </div>
                 </div>
             </div>
@@ -667,11 +667,86 @@
         </section>
     </main>
 
-    <footer class="footer" data-animate>
+    <!-- Финальный акцент -->
+    <div class="final-accent">
         <div class="container">
-            <p>© Zen27, 2025</p>
+            <p>⚡ Zen27 — система для тех, кто следует за рынком, а не за своими ожиданиями.</p>
+        </div>
+    </div>
+
+    <footer id="support" class="footer" data-animate>
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Левая колонка: пока пустое место -->
+                <div class="footer__col footer__col--placeholder">
+                    <p class="footer__placeholder-text">—</p>
+                </div>
+
+                <!-- Средняя колонка: Отдел заботы -->
+                <div class="footer__col footer__col--support">
+                    <h4>Отдел заботы Zen27</h4>
+                    <p class="footer__support-text">— пишите, если хотите уточнить детали или задать вопрос.</p>
+                    <p class="footer__contact">Email: support@zen27.trade</p>
+                    <p class="footer__contact">Tg: @Zen27Care</p>
+                </div>
+
+                <!-- Правая колонка: Быстрые ссылки -->
+                <div class="footer__col footer__col--links">
+                    <h4>Быстрые ссылки</h4>
+                    <a href="#privacy" class="footer__link" id="privacyLink">Политика конфиденциальности</a>
+                    <a href="#privacy" class="footer__link">Согласие на обработку персональных данных</a>
+                </div>
+            </div>
+
+            <!-- Разделитель -->
+            <div class="footer__divider"></div>
+
+            <!-- Юридические данные внизу -->
+            <div class="footer__legal">
+                <p class="footer__copyright">© 2025 Zen27. Все права защищены.</p>
+                <p class="footer__entity">Индивидуальный предприниматель Мамедов Руслан Идрисович</p>
+                <p class="footer__details">ИНН 615491029963 · ОГРНИП 312615430300096</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="closePrivacyModal">&times;</button>
+            <h3>Политика конфиденциальности Zen27</h3>
+            <div class="modal__text">
+                <p>Zen27 уважает ваше спокойствие и не собирает лишних данных.<br>
+                Мы не используем формы регистрации, не храним личную информацию и не передаём её третьим лицам.</p>
+                <p>На сайте используется Яндекс.Метрика — только для анонимной аналитики и улучшения пользовательского опыта.</p>
+                <p>Используя сайт zen27.systems, вы соглашаетесь с этой политикой.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TradingView Modal -->
+    <div id="tradingViewModal" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__content--video">
+            <button class="modal__close" id="closeModal">&times;</button>
+            <h3>Как установить стратегию в TradingView</h3>
+            <div class="modal__video">
+                <div class="video-player">
+                    <div class="video-player__placeholder">
+                        <div class="video-player__play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5v14l11-7z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="video-player__title">Видео-инструкция</div>
+                        <div class="video-player__description">Пошаговая инструкция по установке стратегии</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn--primary" target="_blank" rel="noopener">Перейти на TradingView</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
