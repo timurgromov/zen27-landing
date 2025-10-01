@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape' && privacyModal?.classList.contains('active')) {
             closePrivacyModal();
         }
+        if (e.key === 'Escape' && consentModal?.classList.contains('active')) {
+            closeConsentModal();
+        }
     });
 
     // Privacy Policy Modal
@@ -61,9 +64,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Consent Modal
+    const consentModal = document.getElementById('consentModal');
+    const consentLink = document.getElementById('consentLink');
+    const closeConsentBtn = document.getElementById('closeConsentModal');
+    const consentOverlay = consentModal?.querySelector('.modal__overlay');
+
+    if (consentLink && consentModal) {
+        consentLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            consentModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
     const closePrivacyModal = () => {
         if (privacyModal) {
             privacyModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    const closeConsentModal = () => {
+        if (consentModal) {
+            consentModal.classList.remove('active');
             document.body.style.overflow = '';
         }
     };
@@ -74,6 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (privacyOverlay) {
         privacyOverlay.addEventListener('click', closePrivacyModal);
+    }
+
+    if (closeConsentBtn) {
+        closeConsentBtn.addEventListener('click', closeConsentModal);
+    }
+
+    if (consentOverlay) {
+        consentOverlay.addEventListener('click', closeConsentModal);
     }
 
     const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
