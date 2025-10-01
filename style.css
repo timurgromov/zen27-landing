@@ -178,7 +178,7 @@ img {
 }
 
 main {
-    padding-bottom: 80px;
+    padding-bottom: 140px;
 }
 
 .eyebrow {
@@ -415,11 +415,32 @@ h1, h2, h3 {
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 40px;
-    max-width: 500px;
+    max-width: 800px;
     width: 90%;
-    text-align: center;
+    max-height: 85vh;
+    overflow-y: auto;
+    text-align: left;
     z-index: 1001;
     box-shadow: var(--shadow-soft);
+}
+
+/* Стили для скроллбара */
+.modal__content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal__content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.modal__content::-webkit-scrollbar-thumb {
+    background: rgba(90, 184, 161, 0.3);
+    border-radius: 4px;
+}
+
+.modal__content::-webkit-scrollbar-thumb:hover {
+    background: rgba(90, 184, 161, 0.5);
 }
 
 .modal__close {
@@ -442,6 +463,23 @@ h1, h2, h3 {
     font-size: 1.75rem;
     margin-bottom: 16px;
     color: var(--text-primary);
+}
+
+.modal__content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.modal__content a {
+    color: #5ED4B6;
+    text-decoration: none;
+}
+
+.modal__content a:hover {
+    text-decoration: underline;
 }
 
 .modal__content p {
@@ -1038,40 +1076,28 @@ h1, h2, h3 {
     color: var(--text-secondary);
 }
 
-/* Final Accent */
-.final-accent {
-    text-align: center;
-    padding: 0 0 50px;
-    position: relative;
-}
-
-.final-accent::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.final-accent p {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 400;
-    line-height: 1.4;
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 16px;
-}
-
 .footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 40px 0 48px;
+    padding: 60px 0 60px;
     color: var(--text-secondary);
     font-size: 0.9rem;
     background: var(--bg-base);
+}
+
+.final-accent {
+    padding: 0 0 60px;
+    background: transparent;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.final-accent p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.4em;
+    letter-spacing: 0.3px;
+    margin: 0;
 }
 
 .footer__grid {
@@ -1079,6 +1105,7 @@ h1, h2, h3 {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     align-items: start;
+    margin-bottom: 32px;
 }
 
 .footer__col {
@@ -1124,17 +1151,17 @@ h1, h2, h3 {
 }
 
 .footer__support h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
     margin-bottom: 8px;
 }
 
 .footer__support-text {
     font-size: 0.9rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6em;
+    margin-bottom: 16px;
 }
 
 .footer__contact {
@@ -1143,15 +1170,97 @@ h1, h2, h3 {
     line-height: 1.6;
 }
 
-.footer__link {
-    color: var(--accent-teal);
+.footer__contact:first-of-type {
+    margin-top: 8px;
+}
+
+.footer__contact + .footer__contact {
+    margin-top: 4px;
+}
+
+.footer__contact-link {
+    color: #5ED4B6;
     text-decoration: none;
-    font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
+.footer__contact-link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* Social Icons - Контурная версия */
+.footer__social-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 112px;
+}
+
+.footer__social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    filter: drop-shadow(0 0 0px rgba(87, 205, 160, 0));
+}
+
+.footer__social-icon:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 14px rgba(87, 205, 160, 0.45));
+}
+
+.footer__social-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.8px;
+    fill: none;
+    stroke: url(#zenGradient);
+    transition: all 0.25s ease;
+}
+
+.footer__social-icon:hover svg {
+    stroke: #A0EFD5;
+}
+
+/* Градиент для контуров */
+.footer__social-icons::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.footer__social-icon--telegram,
+.footer__social-icon--youtube {
+    position: relative;
+}
+
+/* Fallback для браузеров без поддержки stroke градиента */
+.footer__social-icon svg path {
+    stroke: #57CDA0;
+}
+
+
+.footer__link {
+    color: #5ED4B6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.8em;
+    transition: color 0.2s ease;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
 .footer__link:hover {
-    color: var(--text-primary);
+    color: #7DE3C1;
 }
 
 .footer__link--main {
@@ -1167,12 +1276,24 @@ h1, h2, h3 {
     max-width: 250px;
 }
 
+.footer__col--social h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #E4E4E4;
+    letter-spacing: 0.3px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
 .footer__col--support h4,
 .footer__col--links h4 {
-    font-size: 1.05rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
 }
 
 .footer__divider {
@@ -1184,10 +1305,21 @@ h1, h2, h3 {
 
 .footer__legal {
     text-align: center;
+    padding-bottom: 30px;
 }
 
-.footer__legal p {
-    margin: 4px 0;
+.footer__legal .footer__copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.6;
+}
+
+.footer__legal .footer__entity,
+.footer__legal .footer__details {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.6;
+    margin-top: 12px;
 }
 
 .footer__col--placeholder {
