@@ -491,10 +491,13 @@ h1, h2, h3 {
 
 .modal__content .btn {
     width: 100%;
+    color: #FFFFFF !important;
 }
 
 .modal__content--video {
-    max-width: 700px;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .modal__video {
@@ -502,7 +505,7 @@ h1, h2, h3 {
 }
 
 .modal__video .video-player {
-    height: 400px;
+    height: 350px;
 }
 
 /* Support Section */
@@ -1273,6 +1276,11 @@ h1, h2, h3 {
 }
 
 /* ===== КАК МЫ РАБОТАЕМ ===== */
+
+.workflow__cta {
+    text-align: center;
+    margin-top: 60px;
+}
 
 .workflow {
     display: grid;

@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Workflow demo button
+    const workflowDemoBtn = document.getElementById('workflowDemoBtn');
+    if (workflowDemoBtn && modal) {
+        workflowDemoBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
     const closeModal = () => {
         if (modal) {
             modal.classList.remove('active');
