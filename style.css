@@ -1125,6 +1125,17 @@ h2::after {
     box-shadow: 0 0 12px rgba(191, 167, 111, 0.25);
 }
 
+/* Gold border and shadow on hover for all FAQ items */
+.accordion__item {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordion__item:hover {
+    border: 1.5px solid var(--gold);
+    border-radius: 22px;
+    box-shadow: 0 0 8px rgba(191, 167, 111, 0.25);
+}
+
 /* Gold accent for FAQ toggle icon */
 .accordion__icon {
     transition: color 0.2s ease;
