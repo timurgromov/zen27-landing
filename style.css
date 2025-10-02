@@ -196,8 +196,7 @@ img {
 
 .btn--primary:hover,
 .btn--primary:focus-visible {
-    border-color: var(--gold);
-    box-shadow: 0 0 0 6px var(--gold-20), 0 8px 24px var(--gold-35);
+    box-shadow: 0 8px 24px var(--gold-35);
     transform: translateY(-1px);
 }
 
