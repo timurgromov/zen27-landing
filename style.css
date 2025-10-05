@@ -1158,6 +1158,27 @@ textarea:focus-visible {
     border-color: var(--gold);
 }
 
+/* Proof card footer styles */
+.proof-card__footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+
+.proof-card__source {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #9CA3AF;
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+.btn--demo {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
 .disclaimer {
     padding-bottom: 0;
 }
