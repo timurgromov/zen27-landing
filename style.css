@@ -2133,7 +2133,7 @@ textarea:focus-visible {
 }
 
 .proof-card__metric-label {
-    font-size: 0.55rem;
+    font-size: 0.60rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--text-secondary);
