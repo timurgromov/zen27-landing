@@ -86,13 +86,86 @@
                     <span class="section__divider" aria-hidden="true"></span>
                 </div>
                 <div class="proof__grid">
-                    <div class="proof-card proof-card--disabled">
+                    <div class="proof-card proof-card--active" data-product="intraday">
                         <div class="proof-card__header">
-                            <span class="proof-card__tag proof-card__tag--start">Старт</span>
+                            <span class="proof-card__tag proof-card__tag--start">Активная</span>
                             <h3>Zen27 Intraday</h3>
                         </div>
-                        <div class="proof-card__content">
-                            <p class="proof-card__placeholder">Скоро</p>
+                        <div class="proof-card__tabs">
+                            <button class="proof-card__tab proof-card__tab--active" data-asset="ETH">ETH</button>
+                            <button class="proof-card__tab" data-asset="BTC">BTC</button>
+                        </div>
+                        <div class="proof-card__content" data-asset="ETH">
+                            <div class="proof-card__metrics">
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <span class="proof-card__metric-value">+7403.0%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Период</span>
+                                    <span class="proof-card__metric-value">8 лет</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <span class="proof-card__metric-value">38.75%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Просадка</span>
+                                        <span class="k-tip-trigger" data-tip="dd">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">8.56%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Сделок</span>
+                                    <span class="proof-card__metric-value">320</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Фактор прибыли</span>
+                                        <span class="k-tip-trigger" data-tip="pf">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">1.946</span>
+                                </div>
+                            </div>
+                            <div class="proof-card__footer">
+                                <p class="proof-card__source">статистика из TradingView</p>
+                                <button class="btn btn--primary btn--demo">Получить демо-доступ</button>
+                            </div>
+                        </div>
+                        <div class="proof-card__content" data-asset="BTC" style="display: none;">
+                            <div class="proof-card__metrics">
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <span class="proof-card__metric-value">+1273.4%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Период</span>
+                                    <span class="proof-card__metric-value">8 лет</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <span class="proof-card__metric-value">35.16%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Просадка</span>
+                                        <span class="k-tip-trigger" data-tip="dd">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">25.58%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Сделок</span>
+                                    <span class="proof-card__metric-value">347</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Фактор прибыли</span>
+                                        <span class="k-tip-trigger" data-tip="pf">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">1.633</span>
+                                </div>
+                            </div>
                             <div class="proof-card__footer">
                                 <p class="proof-card__source">статистика из TradingView</p>
                                 <button class="btn btn--primary btn--demo">Получить демо-доступ</button>
@@ -101,39 +174,82 @@
                     </div>
                     <div class="proof-card proof-card--active" data-product="pulse">
                         <div class="proof-card__header">
-                            <span class="proof-card__tag proof-card__tag--flagship">Флагман</span>
+                            <span class="proof-card__tag proof-card__tag--flagship">Баланс</span>
                             <h3>Zen27 Pulse</h3>
                         </div>
                         <div class="proof-card__tabs">
                             <button class="proof-card__tab proof-card__tab--active" data-asset="ETH">ETH</button>
-                            <button class="proof-card__tab proof-card__tab--disabled" data-asset="BTC" disabled>BTC</button>
+                            <button class="proof-card__tab" data-asset="BTC">BTC</button>
                         </div>
-                        <div class="proof-card__content">
+                        <div class="proof-card__content" data-asset="ETH">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+7,287.48%</span>
+                                    <span class="proof-card__metric-value">+7287.5%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Винрейт</span>
+                                    <span class="proof-card__metric-label">Приб. сделок</span>
                                     <span class="proof-card__metric-value">38.10%</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Макс. просадка</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Просадка</span>
+                                        <span class="k-tip-trigger" data-tip="dd">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">41.50%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Сделок</span>
-                                    <span class="proof-card__metric-value">84</span>
+                                    <span class="proof-card__metric-value">80</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Фактор прибыли</span>
+                                        <span class="k-tip-trigger" data-tip="pf">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">1.908</span>
                                 </div>
                             </div>
-                            <div class="proof-card__chart">
-                                <div class="sparkline" data-chart="equity">
-                                    <div class="sparkline__placeholder">График загружается...</div>
+                            <div class="proof-card__footer">
+                                <p class="proof-card__source">статистика из TradingView</p>
+                                <button class="btn btn--primary btn--demo">Получить демо-доступ</button>
+                            </div>
+                        </div>
+                        <div class="proof-card__content" data-asset="BTC" style="display: none;">
+                            <div class="proof-card__metrics">
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <span class="proof-card__metric-value">+2000%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Период</span>
+                                    <span class="proof-card__metric-value">8 лет</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <span class="proof-card__metric-value">34.74%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Просадка</span>
+                                        <span class="k-tip-trigger" data-tip="dd">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">33.88%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Сделок</span>
+                                    <span class="proof-card__metric-value">95</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Фактор прибыли</span>
+                                        <span class="k-tip-trigger" data-tip="pf">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">2.321</span>
                                 </div>
                             </div>
                             <div class="proof-card__footer">
@@ -144,39 +260,82 @@
                     </div>
                     <div class="proof-card proof-card--active" data-product="core">
                         <div class="proof-card__header">
-                            <span class="proof-card__tag proof-card__tag--premium">Премиум</span>
+                            <span class="proof-card__tag proof-card__tag--premium">Позиционная</span>
                             <h3>Zen27 Core</h3>
                         </div>
                         <div class="proof-card__tabs">
                             <button class="proof-card__tab proof-card__tab--active" data-asset="ETH">ETH</button>
-                            <button class="proof-card__tab proof-card__tab--disabled" data-asset="BTC" disabled>BTC</button>
+                            <button class="proof-card__tab" data-asset="BTC">BTC</button>
                         </div>
-                        <div class="proof-card__content">
+                        <div class="proof-card__content" data-asset="ETH">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+6,752%</span>
+                                    <span class="proof-card__metric-value">+6752.0%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Винрейт</span>
-                                    <span class="proof-card__metric-value">39%</span>
+                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <span class="proof-card__metric-value">32.00%</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Макс. просадка</span>
-                                    <span class="proof-card__metric-value">31%</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Просадка</span>
+                                        <span class="k-tip-trigger" data-tip="dd">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">38.07%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Сделок</span>
-                                    <span class="proof-card__metric-value">31</span>
+                                    <span class="proof-card__metric-value">50</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Фактор прибыли</span>
+                                        <span class="k-tip-trigger" data-tip="pf">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">2.947</span>
                                 </div>
                             </div>
-                            <div class="proof-card__chart">
-                                <div class="sparkline" data-chart="equity">
-                                    <div class="sparkline__placeholder">С фильтром Fear & Greed</div>
+                            <div class="proof-card__footer">
+                                <p class="proof-card__source">статистика из TradingView</p>
+                                <button class="btn btn--primary btn--demo">Получить демо-доступ</button>
+                            </div>
+                        </div>
+                        <div class="proof-card__content" data-asset="BTC" style="display: none;">
+                            <div class="proof-card__metrics">
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <span class="proof-card__metric-value">+5383.2%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Период</span>
+                                    <span class="proof-card__metric-value">8 лет</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <span class="proof-card__metric-value">30.91%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Просадка</span>
+                                        <span class="k-tip-trigger" data-tip="dd">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">52.54%</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <span class="proof-card__metric-label">Сделок</span>
+                                    <span class="proof-card__metric-value">55</span>
+                                </div>
+                                <div class="proof-card__metric">
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Фактор прибыли</span>
+                                        <span class="k-tip-trigger" data-tip="pf">i</span>
+                                    </div>
+                                    <span class="proof-card__metric-value">3.125</span>
                                 </div>
                             </div>
                             <div class="proof-card__footer">
@@ -189,7 +348,6 @@
                 
                 <!-- Видео методологии -->
                 <div class="methodology-video">
-                    <p class="methodology-video__caption">Методология бэктестов Zen27 — объяснение принципов тестирования и независимой валидации.</p>
                     <div class="panel panel--light panel--tilt" data-tilt>
                         <span class="panel__accent" aria-hidden="true"></span>
                         <div class="panel__header">
@@ -938,5 +1096,121 @@
     </div>
 
     <script src="script.js"></script>
-</body>
+    <script>
+        // Переключение табов в карточках стратегий
+        document.addEventListener('DOMContentLoaded', function() {
+            // Удаляем все существующие обработчики
+            const tabs = document.querySelectorAll('.proof-card__tab');
+            tabs.forEach(tab => {
+                tab.replaceWith(tab.cloneNode(true));
+            });
+            
+            // Добавляем новые обработчики
+            const newTabs = document.querySelectorAll('.proof-card__tab');
+            newTabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const card = this.closest('.proof-card');
+                    const asset = this.dataset.asset;
+                    
+                    console.log('Tab clicked:', asset, 'in card:', card);
+                    
+                    // Убираем активный класс со всех табов в этой карточке
+                    card.querySelectorAll('.proof-card__tab').forEach(t => t.classList.remove('proof-card__tab--active'));
+                    // Добавляем активный класс к текущему табу
+                    this.classList.add('proof-card__tab--active');
+                    
+                    // Скрываем все контенты с data-asset
+                    card.querySelectorAll('.proof-card__content[data-asset]').forEach(content => {
+                        content.style.display = 'none';
+                        console.log('Hiding content:', content.dataset.asset);
+                    });
+                    
+                    // Показываем нужный контент
+                    const targetContent = card.querySelector(`.proof-card__content[data-asset="${asset}"]`);
+                    if (targetContent) {
+                        targetContent.style.display = 'block';
+                        console.log('Showing content:', asset);
+                    } else {
+                        console.error('Content not found for asset:', asset);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Tooltip container -->
+    <div id="kTip" class="k-tip" hidden></div>
+
+    <script>
+        // Tooltip functionality
+        const TIP_CONTENT = {
+            pf: `
+                <div><b>Profit Factor</b> показывает, сколько прибыли стратегия приносит на каждый доллар убытка.</div>
+                <div style="margin-top:10px">
+                    <span class="dot blue"></span> &gt; 1.5 — устойчивая система<br>
+                    <span class="dot green"></span> &gt; 2.0 — высокая эффективность<br>
+                    <span class="dot gold"></span> &gt; 3.0 — уровень проф. фондов
+                </div>
+            `,
+            dd: `
+                <div><b>Максимальная просадка</b> — временное снижение капитала во время теста.</div>
+                <div style="margin-top:10px">В стратегиях Zen27 — обычно 35–50%.</div>
+                <div>Для сравнения: у топ-фондов схожего профиля — ~30–45%.</div>
+                <div style="margin-top:10px">При использовании фильтра «страх/жадость» просадка в тестах снижалась ≈ на 10%.</div>
+            `
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const tip = document.getElementById('kTip');
+            if (!tip) return;
+
+            const GAP = 10;
+            const WIDTH = 360;
+
+            function showTip(trigger) {
+                const key = trigger.dataset.tip;
+                if (!key || !TIP_CONTENT[key]) return;
+
+                tip.innerHTML = TIP_CONTENT[key];
+                tip.hidden = false;
+
+                const r = trigger.getBoundingClientRect();
+                let left = r.left;
+                let top = r.bottom + GAP;
+
+                const overflowRight = left + WIDTH + 16 - window.innerWidth;
+                if (overflowRight > 0) left = Math.max(8, left - overflowRight);
+
+                const tipHeight = tip.offsetHeight || 0;
+                if (top + tipHeight > window.innerHeight - 8 && r.top - GAP - tipHeight > 8) {
+                    top = r.top - GAP - tipHeight;
+                }
+
+                tip.style.left = `${Math.round(left)}px`;
+                tip.style.top = `${Math.round(top)}px`;
+            }
+
+            let current = null;
+
+            document.addEventListener('mouseenter', e => {
+                const t = e.target.closest('.k-tip-trigger');
+                if (!t) return;
+                current = t;
+                showTip(t);
+            }, true);
+
+            document.addEventListener('mouseleave', e => {
+                const t = e.target.closest('.k-tip-trigger');
+                if (!t || t !== current) return;
+                tip.hidden = true;
+                current = null;
+            }, true);
+
+            window.addEventListener('scroll', () => { tip.hidden = true; }, { passive:true });
+        });
+    </script>
+    </body>
 </html>

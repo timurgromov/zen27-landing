@@ -2133,7 +2133,7 @@ textarea:focus-visible {
 }
 
 .proof-card__metric-label {
-    font-size: 0.75rem;
+    font-size: 0.55rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--text-secondary);
@@ -2145,6 +2145,7 @@ textarea:focus-visible {
     font-weight: 600;
     color: var(--text-primary);
 }
+
 
 .proof-card__chart {
     height: 80px;
@@ -2201,3 +2202,68 @@ textarea:focus-visible {
     }
 }
 /* PATCH END: PROOF_CSS */
+
+/* Tooltip styles */
+:root {
+    --tip-w: 360px;
+    --tip-gap: 10px;
+    --tip-rad: 12px;
+    --tip-bg: #15191f;
+    --tip-fg: #e6eef6;
+    --tip-border: rgba(255,255,255,.08);
+    --tip-shadow: 0 20px 60px rgba(0,0,0,.45), 0 0 1px rgba(255,255,255,.05);
+}
+
+.k-tip {
+    position: fixed;
+    z-index: 999999;
+    width: var(--tip-w);
+    max-width: calc(100vw - 32px);
+    background: var(--tip-bg);
+    color: var(--tip-fg);
+    border: 1px solid var(--tip-border);
+    border-radius: var(--tip-rad);
+    padding: 16px 18px;
+    box-shadow: var(--tip-shadow);
+    pointer-events: none;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+.k-tip .dot { 
+    display:inline-block; 
+    width:10px; 
+    height:10px; 
+    border-radius:50%; 
+    margin-right:8px; 
+    transform: translateY(1px); 
+}
+
+.k-tip .dot.blue  { background: #4ca3ff; }
+.k-tip .dot.green { background: #41d19e; }
+.k-tip .dot.gold  { background: #f7c46b; }
+
+.k-tip-trigger {
+    display:inline-flex; 
+    align-items:center; 
+    justify-content:center;
+    width:18px; 
+    height:18px; 
+    border-radius:50%;
+    font-size:12px; 
+    user-select:none; 
+    cursor:help;
+    color:#BFD6E6; 
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    margin-left: 6px;
+}
+
+.k-tip-trigger:hover { 
+    background:rgba(255,255,255,.1); 
+}
+
+.proof-card__metric-header {
+    display: flex;
+    align-items: center;
+}
