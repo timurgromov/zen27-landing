@@ -98,7 +98,10 @@
                         <div class="proof-card__content" data-asset="ETH">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Доходность</span>
+                                        <span class="k-tip-trigger" data-tip="yield">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">+7 403%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -136,7 +139,10 @@
                         <div class="proof-card__content" data-asset="BTC" style="display: none;">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Доходность</span>
+                                        <span class="k-tip-trigger" data-tip="yield">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">+1 273%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -184,7 +190,10 @@
                         <div class="proof-card__content" data-asset="ETH">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Доходность</span>
+                                        <span class="k-tip-trigger" data-tip="yield">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">+7 291%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -222,7 +231,10 @@
                         <div class="proof-card__content" data-asset="BTC" style="display: none;">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Доходность</span>
+                                        <span class="k-tip-trigger" data-tip="yield">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">+5 052%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -270,7 +282,10 @@
                         <div class="proof-card__content" data-asset="ETH">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Доходность</span>
+                                        <span class="k-tip-trigger" data-tip="yield">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">+6 851%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -308,7 +323,10 @@
                         <div class="proof-card__content" data-asset="BTC" style="display: none;">
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Доходность</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Доходность</span>
+                                        <span class="k-tip-trigger" data-tip="yield">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">+5 750%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -1147,6 +1165,15 @@
     <script>
         // Tooltip functionality
         const TIP_CONTENT = {
+            yield: `
+                <div><b>За тот же период:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot blue"></span> Индекс S&P 500 — около +130%<br>
+                    <span class="dot orange"></span> Bitcoin (HODL) — +1 500–1 800%<br>
+                    <span class="dot green"></span> Алготрейдинг-фонды (Quant / Crypto Funds) — +300–800%
+                </div>
+                <div style="margin-top:10px">Zen27 демонстрирует уровень топовых квант-систем при просадках в 3–5 раз ниже.</div>
+            `,
             pf: `
                 <div><b>Profit Factor</b> — валовая прибыль разделенная на валовый убыток.</div>
                 <div>Показывает, сколько долларов заработано на каждый доллар потерь.</div>
