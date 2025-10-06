@@ -81,9 +81,8 @@
             <div class="container">
                 <div class="section__header">
                     <span class="eyebrow">Статистика</span>
-                    <h2>Реальные результаты Zen27 за 8 лет.<br>Открытая статистика и независимая валидация. Без подглядывания вперёд. Без вырезанных участков.</h2>
-                    <p class="section__subtitle">Тесты на всей истории рынка, без подгонки и без исключений. Проверенные данные на TradingView.</p>
-                    <span class="section__divider" aria-hidden="true"></span>
+                    <h2>Реальные результаты за 8 лет.<br>Без подгонки и подглядывания</h2>
+                    <p class="section__subtitle">Проверено на TradingView.</p>
                 </div>
                 <div class="proof__grid">
                     <div class="proof-card proof-card--active" data-product="intraday">
@@ -109,7 +108,10 @@
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Приб. сделок</span>
+                                        <span class="k-tip-trigger" data-tip="tradesIntradayEth">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">38.8%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -150,7 +152,10 @@
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Приб. сделок</span>
+                                        <span class="k-tip-trigger" data-tip="tradesIntradayBtc">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">35.2%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -201,7 +206,10 @@
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Приб. сделок</span>
+                                        <span class="k-tip-trigger" data-tip="trades">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">38.1%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -242,7 +250,10 @@
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Приб. сделок</span>
+                                        <span class="k-tip-trigger" data-tip="tradesPulseBtc">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">34.7%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -293,7 +304,10 @@
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Приб. сделок</span>
+                                        <span class="k-tip-trigger" data-tip="tradesCoreEth">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">32.0%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -334,7 +348,10 @@
                                     <span class="proof-card__metric-value">8 лет</span>
                                 </div>
                                 <div class="proof-card__metric">
-                                    <span class="proof-card__metric-label">Приб. сделок</span>
+                                    <div class="proof-card__metric-header">
+                                        <span class="proof-card__metric-label">Приб. сделок</span>
+                                        <span class="k-tip-trigger" data-tip="tradesCoreBtc">i</span>
+                                    </div>
                                     <span class="proof-card__metric-value">31.5%</span>
                                 </div>
                                 <div class="proof-card__metric">
@@ -1166,13 +1183,73 @@
         // Tooltip functionality
         const TIP_CONTENT = {
             yield: `
-                <div><b>За тот же период:</b></div>
+                <div><b>Подробнее:</b></div>
                 <div style="margin-top:10px">
                     <span class="dot blue"></span> Индекс S&P 500 — около +130%<br>
                     <span class="dot orange"></span> Bitcoin (HODL) — +1 500–1 800%<br>
                     <span class="dot green"></span> Алготрейдинг-фонды (Quant / Crypto Funds) — +300–800%
                 </div>
                 <div style="margin-top:10px">Zen27 демонстрирует уровень топовых квант-систем при просадках в 3–5 раз ниже.</div>
+            `,
+            trades: `
+                <div style="margin-bottom:6px"><b>Подробнее:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot green"></span> Средняя прибыльная сделка: +28.2%<br>
+                    <span class="dot red"></span> Средняя убыточная сделка: –5.1%<br>
+                    <span class="dot blue"></span> Соотношение прибыль/убыток: ≈5.5×<br>
+                    <span class="dot gold"></span> Максимальная прибыль за сделку: +168%<br>
+                    <span class="dot orange"></span> Максимальный убыток за сделку: –18.5%
+                </div>
+            `,
+            tradesPulseBtc: `
+                <div style="margin-bottom:6px"><b>Подробнее:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot green"></span> Средняя прибыльная сделка: +22.3%<br>
+                    <span class="dot red"></span> Средняя убыточная сделка: –3.3%<br>
+                    <span class="dot blue"></span> Соотношение прибыль/убыток: ≈7.3×<br>
+                    <span class="dot gold"></span> Максимальная прибыль за сделку: +102%<br>
+                    <span class="dot orange"></span> Максимальный убыток за сделку: –15.4%
+                </div>
+            `,
+            tradesIntradayBtc: `
+                <div style="margin-bottom:6px"><b>Подробнее:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot green"></span> Средняя прибыльная сделка: +5.4%<br>
+                    <span class="dot red"></span> Средняя убыточная сделка: –1.6%<br>
+                    <span class="dot blue"></span> Соотношение прибыль/убыток: ≈3.3×<br>
+                    <span class="dot gold"></span> Максимальная прибыль за сделку: +27.6%<br>
+                    <span class="dot orange"></span> Максимальный убыток за сделку: –9.4%
+                </div>
+            `,
+            tradesIntradayEth: `
+                <div style="margin-bottom:6px"><b>Подробнее:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot green"></span> Средняя прибыльная сделка: +7.5%<br>
+                    <span class="dot red"></span> Средняя убыточная сделка: –2.1%<br>
+                    <span class="dot blue"></span> Соотношение прибыль/убыток: ≈3.5×<br>
+                    <span class="dot gold"></span> Максимальная прибыль за сделку: +63.2%<br>
+                    <span class="dot orange"></span> Максимальный убыток за сделку: –12.1%
+                </div>
+            `,
+            tradesCoreEth: `
+                <div style="margin-bottom:6px"><b>Подробнее:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot green"></span> Средняя прибыльная сделка: +57.7%<br>
+                    <span class="dot red"></span> Средняя убыточная сделка: –5.4%<br>
+                    <span class="dot blue"></span> Соотношение прибыль/убыток: ≈10.6×<br>
+                    <span class="dot gold"></span> Максимальная прибыль за сделку: +300%<br>
+                    <span class="dot orange"></span> Максимальный убыток за сделку: –22.3%
+                </div>
+            `,
+            tradesCoreBtc: `
+                <div style="margin-bottom:6px"><b>Подробнее:</b></div>
+                <div style="margin-top:10px">
+                    <span class="dot green"></span> Средняя прибыльная сделка: +52.8%<br>
+                    <span class="dot red"></span> Средняя убыточная сделка: –3.9%<br>
+                    <span class="dot blue"></span> Соотношение прибыль/убыток: ≈13.5×<br>
+                    <span class="dot gold"></span> Максимальная прибыль за сделку: +378%<br>
+                    <span class="dot orange"></span> Максимальный убыток за сделку: –13.6%
+                </div>
             `,
             pf: `
                 <div><b>Profit Factor</b> — валовая прибыль разделенная на валовый убыток.</div>
