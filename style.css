@@ -2239,9 +2239,11 @@ textarea:focus-visible {
     transform: translateY(1px); 
 }
 
-.k-tip .dot.blue  { background: #4ca3ff; }
-.k-tip .dot.green { background: #41d19e; }
-.k-tip .dot.gold  { background: #f7c46b; }
+.k-tip .dot.red    { background: #FF6B6B; }
+.k-tip .dot.orange { background: #FFB347; }
+.k-tip .dot.green  { background: #47E6B1; }
+.k-tip .dot.blue   { background: #4DB6FF; }
+.k-tip .dot.gold   { background: #D6B86A; }
 
 .k-tip-trigger {
     display:inline-flex; 

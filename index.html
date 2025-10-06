@@ -99,7 +99,7 @@
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+7403%</span>
+                                    <span class="proof-card__metric-value">+7 403%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
@@ -137,7 +137,7 @@
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+1273%</span>
+                                    <span class="proof-card__metric-value">+1 273%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
@@ -185,7 +185,7 @@
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+7291%</span>
+                                    <span class="proof-card__metric-value">+7 291%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
@@ -223,7 +223,7 @@
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+2000%</span>
+                                    <span class="proof-card__metric-value">+5 052%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
@@ -271,7 +271,7 @@
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+6851%</span>
+                                    <span class="proof-card__metric-value">+6 851%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
@@ -309,7 +309,7 @@
                             <div class="proof-card__metrics">
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Доходность</span>
-                                    <span class="proof-card__metric-value">+5750%</span>
+                                    <span class="proof-card__metric-value">+5 750%</span>
                                 </div>
                                 <div class="proof-card__metric">
                                     <span class="proof-card__metric-label">Период</span>
@@ -1148,18 +1148,23 @@
         // Tooltip functionality
         const TIP_CONTENT = {
             pf: `
-                <div><b>Profit Factor</b> показывает, сколько прибыли стратегия приносит на каждый доллар убытка.</div>
+                <div><b>Profit Factor</b> — валовая прибыль разделенная на валовый убыток.</div>
+                <div>Показывает, сколько долларов заработано на каждый доллар потерь.</div>
                 <div style="margin-top:10px">
-                    <span class="dot blue"></span> &gt; 1.5 — устойчивая система<br>
-                    <span class="dot green"></span> &gt; 2.0 — высокая эффективность<br>
-                    <span class="dot gold"></span> &gt; 3.0 — уровень проф. фондов
+                    <span class="dot red"></span> &lt; 1.3 — Нестабильная<br>
+                    <span class="dot orange"></span> &gt; 1.3 — Рабочая<br>
+                    <span class="dot green"></span> &gt; 1.8 — Эффективная<br>
+                    <span class="dot blue"></span> &gt; 2.5 — Профессиональная<br>
+                    <span class="dot gold"></span> &gt; 3.5 — Уникальная
                 </div>
             `,
             dd: `
-                <div><b>Максимальная просадка</b> — временное снижение капитала во время теста.</div>
-                <div style="margin-top:10px">В стратегиях Zen27 — обычно 35–50%.</div>
-                <div>Для сравнения: у топ-фондов схожего профиля — ~30–45%.</div>
-                <div style="margin-top:10px">При использовании фильтра «страх/жадость» просадка в тестах снижалась ≈ на 10%.</div>
+                <div><b>Временное снижение капитала</b> после серии убытков.</div>
+                <div style="margin-top:10px">
+                    <span class="dot red"></span> У ходлеров до 95%<br>
+                    <span class="dot orange"></span> У топ фондов до 80%<br>
+                    <span class="dot green"></span> У Zen27 30-50%
+                </div>
             `
         };
 

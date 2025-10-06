@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Strategy cards demo buttons
+    const strategyDemoBtns = document.querySelectorAll('.btn--demo');
+    strategyDemoBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
     const closeModal = () => {
         if (modal) {
             modal.classList.remove('active');
